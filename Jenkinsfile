@@ -1,6 +1,6 @@
 @Library('Shared')_
 pipeline{
-    agent { label 'vinod'}
+    agent { label "vinod"}
     
     stages{
         stage("Code clone"){
@@ -16,6 +16,7 @@ pipeline{
         }
         stage("Push to DockerHub"){
             steps{
+                echo"Hello Shubham"
                 docker_push("dockerHubCreds","notes-app","latest")
             }
         }
