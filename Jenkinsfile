@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-            docker_build("notes-app","latest")
+            docker_build("notes-app","latest","shubiie")
             }
         }
         stage("Push to DockerHub"){
