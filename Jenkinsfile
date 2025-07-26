@@ -16,7 +16,7 @@ pipeline{
         }
         stage("Push to DockerHub"){
             steps{
-                echo"Hello Shubham"
+                echo"Hello Shubham D"
                 docker_push("dockerHubCreds","notes-app","latest")
             }
         }
